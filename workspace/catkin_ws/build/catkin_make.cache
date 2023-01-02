@@ -1,2 +1,0 @@
-first_package:simple_arm
--DCATKIN_DEVEL_PREFIX=/home/eight/Downloads/Udacity_RoboticsSE/howardhome/dec20_2022/workspace/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/eight/Downloads/Udacity_RoboticsSE/howardhome/dec20_2022/workspace/catkin_ws/install -G Unix Makefiles

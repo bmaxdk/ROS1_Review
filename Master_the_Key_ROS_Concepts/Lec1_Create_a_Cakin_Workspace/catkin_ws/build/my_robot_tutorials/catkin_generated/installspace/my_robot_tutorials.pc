@@ -1,0 +1,8 @@
+prefix=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/install
+
+Name: my_robot_tutorials
+Description: Description of my_robot_tutorials
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

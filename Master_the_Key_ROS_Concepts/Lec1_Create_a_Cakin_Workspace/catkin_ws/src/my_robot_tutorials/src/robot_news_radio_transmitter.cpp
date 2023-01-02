@@ -4,7 +4,10 @@
 int main(int argc, char **argv)
 {
 	//Create node
-	ros::init(argc, argv, "robot_news_radio_transmitter");
+	//ros::init(argc, argv, "robot_news_radio_transmitter");
+	//To add anonymou
+	ros::init(argc, argv, "robot_news_radio_transmitter", ros::init_options::AnonymousName);
+
 	ros::NodeHandle nh;
 	
 	ROS_INFO("Node has been started");

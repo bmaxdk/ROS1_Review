@@ -1,4 +1,4 @@
-prefix=/home/eight/Downloads/Udemy/github/ROS1_Review/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/devel
+prefix=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/devel
 
 Name: my_robot_tutorials
 Description: Description of my_robot_tutorials

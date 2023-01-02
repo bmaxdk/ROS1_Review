@@ -1,0 +1,8 @@
+prefix=/home/eight/Downloads/Udacity_RoboticsSE/howardhome/dec20_2022/workspace/catkin_ws/devel
+
+Name: first_package
+Description: Description of first_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

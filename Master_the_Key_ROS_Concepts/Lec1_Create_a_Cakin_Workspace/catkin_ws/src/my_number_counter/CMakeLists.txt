@@ -137,6 +137,8 @@ include_directories(
 
 add_executable(number_publisher src/number_publisher.cpp)
 target_link_libraries(number_publisher ${catkin_LIBRARIES})
+add_executable(number_counter src/number_counter.cpp)
+target_link_libraries(number_counter ${catkin_LIBRARIES})
 
 
 ## Rename C++ executable without prefix

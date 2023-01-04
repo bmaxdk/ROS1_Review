@@ -243,6 +243,21 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+my_number_counter/CMakeFiles/number_counter.dir/rule:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_number_counter/CMakeFiles/number_counter.dir/rule
+.PHONY : my_number_counter/CMakeFiles/number_counter.dir/rule
+
+# Convenience name for target.
+number_counter: my_number_counter/CMakeFiles/number_counter.dir/rule
+
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
+# Convenience name for target.
 my_number_counter/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_number_counter/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_number_counter/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
@@ -407,6 +422,33 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+src/number_counter.o: src/number_counter.cpp.o
+
+.PHONY : src/number_counter.o
+
+# target to build an object file
+src/number_counter.cpp.o:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.o
+.PHONY : src/number_counter.cpp.o
+
+src/number_counter.i: src/number_counter.cpp.i
+
+.PHONY : src/number_counter.i
+
+# target to preprocess a source file
+src/number_counter.cpp.i:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.i
+.PHONY : src/number_counter.cpp.i
+
+src/number_counter.s: src/number_counter.cpp.s
+
+.PHONY : src/number_counter.s
+
+# target to generate assembly for a file
+src/number_counter.cpp.s:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.s
+.PHONY : src/number_counter.cpp.s
+
 src/number_publisher.o: src/number_publisher.cpp.o
 
 .PHONY : src/number_publisher.o
@@ -450,6 +492,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... list_install_components"
+	@echo "... number_counter"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... install"
@@ -463,6 +506,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... src/number_counter.o"
+	@echo "... src/number_counter.i"
+	@echo "... src/number_counter.s"
 	@echo "... src/number_publisher.o"
 	@echo "... src/number_publisher.i"
 	@echo "... src/number_publisher.s"

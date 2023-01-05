@@ -174,9 +174,11 @@ my_number_counter/clean: my_number_counter/CMakeFiles/rosgraph_msgs_generate_mes
 # Directory level rules for directory my_robot_tutorials
 
 # Recursive "all" directory target.
-my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
 my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/smartphone_node.dir/all
+my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/all
+my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
 my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/node_cpp.dir/all
+my_robot_tutorials/all: my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/all
 
 .PHONY : my_robot_tutorials/all
 
@@ -186,9 +188,16 @@ my_robot_tutorials/preinstall:
 .PHONY : my_robot_tutorials/preinstall
 
 # Recursive "clean" directory target.
-my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/clean
 my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/smartphone_node.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
 my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/node_cpp.dir/clean
+my_robot_tutorials/clean: my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/clean
 
 .PHONY : my_robot_tutorials/clean
 
@@ -335,7 +344,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -362,7 +371,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -389,7 +398,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -416,7 +425,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -578,7 +587,7 @@ my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 my_number_counter/CMakeFiles/number_counter.dir/all:
 	$(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/depend
 	$(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=11,12 "Built target number_counter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=15,16 "Built target number_counter"
 .PHONY : my_number_counter/CMakeFiles/number_counter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -740,7 +749,7 @@ my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
 my_number_counter/CMakeFiles/number_publisher.dir/all:
 	$(MAKE) -f my_number_counter/CMakeFiles/number_publisher.dir/build.make my_number_counter/CMakeFiles/number_publisher.dir/depend
 	$(MAKE) -f my_number_counter/CMakeFiles/number_publisher.dir/build.make my_number_counter/CMakeFiles/number_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target number_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=17,18 "Built target number_publisher"
 .PHONY : my_number_counter/CMakeFiles/number_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -896,31 +905,85 @@ my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 .PHONY : my_number_counter/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir
+# Target rules for target my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir
 
 # All Build rule for target.
-my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all:
-	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/depend
-	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=15,16 "Built target robot_news_radio_transmitter"
-.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num= "Built target rospy_tutorials_generate_messages_cpp"
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
-.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-robot_news_radio_transmitter: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule
+rospy_tutorials_generate_messages_cpp: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/rule
 
-.PHONY : robot_news_radio_transmitter
+.PHONY : rospy_tutorials_generate_messages_cpp
 
 # clean rule for target.
-my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean:
-	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
-.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num= "Built target rospy_tutorials_generate_messages_py"
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rospy_tutorials_generate_messages_py: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/rule
+
+.PHONY : rospy_tutorials_generate_messages_py
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num= "Built target rospy_tutorials_generate_messages_eus"
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rospy_tutorials_generate_messages_eus: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/rule
+
+.PHONY : rospy_tutorials_generate_messages_eus
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Target rules for target my_robot_tutorials/CMakeFiles/smartphone_node.dir
@@ -929,7 +992,7 @@ my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean:
 my_robot_tutorials/CMakeFiles/smartphone_node.dir/all:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/smartphone_node.dir/build.make my_robot_tutorials/CMakeFiles/smartphone_node.dir/depend
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/smartphone_node.dir/build.make my_robot_tutorials/CMakeFiles/smartphone_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=17,18 "Built target smartphone_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target smartphone_node"
 .PHONY : my_robot_tutorials/CMakeFiles/smartphone_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -950,13 +1013,121 @@ my_robot_tutorials/CMakeFiles/smartphone_node.dir/clean:
 .PHONY : my_robot_tutorials/CMakeFiles/smartphone_node.dir/clean
 
 #=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num= "Built target rospy_tutorials_generate_messages_nodejs"
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rospy_tutorials_generate_messages_nodejs: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/rule
+
+.PHONY : rospy_tutorials_generate_messages_nodejs
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/add_two_ints_server.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target add_two_ints_server"
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/rule
+
+# Convenience name for target.
+add_two_ints_server: my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/rule
+
+.PHONY : add_two_ints_server
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num= "Built target rospy_tutorials_generate_messages_lisp"
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rospy_tutorials_generate_messages_lisp: my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/rule
+
+.PHONY : rospy_tutorials_generate_messages_lisp
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=19,20 "Built target robot_news_radio_transmitter"
+.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule
+
+# Convenience name for target.
+robot_news_radio_transmitter: my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/rule
+
+.PHONY : robot_news_radio_transmitter
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/clean
+
+#=============================================================================
 # Target rules for target my_robot_tutorials/CMakeFiles/node_cpp.dir
 
 # All Build rule for target.
 my_robot_tutorials/CMakeFiles/node_cpp.dir/all:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/node_cpp.dir/build.make my_robot_tutorials/CMakeFiles/node_cpp.dir/depend
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/node_cpp.dir/build.make my_robot_tutorials/CMakeFiles/node_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=9,10 "Built target node_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target node_cpp"
 .PHONY : my_robot_tutorials/CMakeFiles/node_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -975,6 +1146,33 @@ node_cpp: my_robot_tutorials/CMakeFiles/node_cpp.dir/rule
 my_robot_tutorials/CMakeFiles/node_cpp.dir/clean:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/node_cpp.dir/build.make my_robot_tutorials/CMakeFiles/node_cpp.dir/clean
 .PHONY : my_robot_tutorials/CMakeFiles/node_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target my_robot_tutorials/CMakeFiles/add_two_ints_client.dir
+
+# All Build rule for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/all:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/depend
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles --progress-num=1,2 "Built target add_two_ints_client"
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/all
+
+# Build rule for subdir invocation for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/CMakeFiles 0
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/rule
+
+# Convenience name for target.
+add_two_ints_client: my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/rule
+
+.PHONY : add_two_ints_client
+
+# clean rule for target.
+my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/clean:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/clean
+.PHONY : my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

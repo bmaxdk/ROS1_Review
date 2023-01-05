@@ -506,17 +506,43 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named robot_news_radio_transmitter
+# Target rules for targets named rospy_tutorials_generate_messages_cpp
 
 # Build rule for target.
-robot_news_radio_transmitter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_news_radio_transmitter
-.PHONY : robot_news_radio_transmitter
+rospy_tutorials_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospy_tutorials_generate_messages_cpp
+.PHONY : rospy_tutorials_generate_messages_cpp
 
 # fast build rule for target.
-robot_news_radio_transmitter/fast:
-	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build
-.PHONY : robot_news_radio_transmitter/fast
+rospy_tutorials_generate_messages_cpp/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_cpp.dir/build
+.PHONY : rospy_tutorials_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rospy_tutorials_generate_messages_py
+
+# Build rule for target.
+rospy_tutorials_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospy_tutorials_generate_messages_py
+.PHONY : rospy_tutorials_generate_messages_py
+
+# fast build rule for target.
+rospy_tutorials_generate_messages_py/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_py.dir/build
+.PHONY : rospy_tutorials_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rospy_tutorials_generate_messages_eus
+
+# Build rule for target.
+rospy_tutorials_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospy_tutorials_generate_messages_eus
+.PHONY : rospy_tutorials_generate_messages_eus
+
+# fast build rule for target.
+rospy_tutorials_generate_messages_eus/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_eus.dir/build
+.PHONY : rospy_tutorials_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named smartphone_node
@@ -532,6 +558,58 @@ smartphone_node/fast:
 .PHONY : smartphone_node/fast
 
 #=============================================================================
+# Target rules for targets named rospy_tutorials_generate_messages_nodejs
+
+# Build rule for target.
+rospy_tutorials_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospy_tutorials_generate_messages_nodejs
+.PHONY : rospy_tutorials_generate_messages_nodejs
+
+# fast build rule for target.
+rospy_tutorials_generate_messages_nodejs/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_nodejs.dir/build
+.PHONY : rospy_tutorials_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_server
+
+# Build rule for target.
+add_two_ints_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
+.PHONY : add_two_ints_server
+
+# fast build rule for target.
+add_two_ints_server/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_server.dir/build
+.PHONY : add_two_ints_server/fast
+
+#=============================================================================
+# Target rules for targets named rospy_tutorials_generate_messages_lisp
+
+# Build rule for target.
+rospy_tutorials_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospy_tutorials_generate_messages_lisp
+.PHONY : rospy_tutorials_generate_messages_lisp
+
+# fast build rule for target.
+rospy_tutorials_generate_messages_lisp/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build.make my_robot_tutorials/CMakeFiles/rospy_tutorials_generate_messages_lisp.dir/build
+.PHONY : rospy_tutorials_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named robot_news_radio_transmitter
+
+# Build rule for target.
+robot_news_radio_transmitter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_news_radio_transmitter
+.PHONY : robot_news_radio_transmitter
+
+# fast build rule for target.
+robot_news_radio_transmitter/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build.make my_robot_tutorials/CMakeFiles/robot_news_radio_transmitter.dir/build
+.PHONY : robot_news_radio_transmitter/fast
+
+#=============================================================================
 # Target rules for targets named node_cpp
 
 # Build rule for target.
@@ -543,6 +621,19 @@ node_cpp: cmake_check_build_system
 node_cpp/fast:
 	$(MAKE) -f my_robot_tutorials/CMakeFiles/node_cpp.dir/build.make my_robot_tutorials/CMakeFiles/node_cpp.dir/build
 .PHONY : node_cpp/fast
+
+#=============================================================================
+# Target rules for targets named add_two_ints_client
+
+# Build rule for target.
+add_two_ints_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
+.PHONY : add_two_ints_client
+
+# fast build rule for target.
+add_two_ints_client/fast:
+	$(MAKE) -f my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build.make my_robot_tutorials/CMakeFiles/add_two_ints_client.dir/build
+.PHONY : add_two_ints_client/fast
 
 # Help Target
 help:
@@ -583,9 +674,16 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... robot_news_radio_transmitter"
+	@echo "... rospy_tutorials_generate_messages_cpp"
+	@echo "... rospy_tutorials_generate_messages_py"
+	@echo "... rospy_tutorials_generate_messages_eus"
 	@echo "... smartphone_node"
+	@echo "... rospy_tutorials_generate_messages_nodejs"
+	@echo "... add_two_ints_server"
+	@echo "... rospy_tutorials_generate_messages_lisp"
+	@echo "... robot_news_radio_transmitter"
 	@echo "... node_cpp"
+	@echo "... add_two_ints_client"
 .PHONY : help
 
 

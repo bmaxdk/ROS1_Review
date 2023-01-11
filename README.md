@@ -44,3 +44,53 @@ target_link_libraries(nameofnode ${catkin_LIBRARIES})
 ```
 `catkin_make`
 
+## Handle Parameters
+```
+cd catkin_ws/src
+catkin_create_pkg name_of_msgs roscpp rospy std_msgs
+cd name_of_msgs
+rm -rf include/
+rm -rf src/
+```
+### Need to add package.xml
+`<build_depend>message_generation</build_depend>`
+`<exec_depend>message_runtime</exec_depend>`
+
+### Need to add CMakeList.txt
+In find_package add
+`message_generation`
+Uncomment:
+generate_messages section
+
+In catkin_package,
+uncomment CATKIN_DPENDS roscpp rospy std_msgs
+and add message_runtime
+
+`CATKIN_DPENDS roscpp rospy std_msgs message_runtime`
+
+## create folder in /catkin_ws/src/name_of_msgs
+```
+mkdir msg
+cd msg
+touch NameOfMsg.msg
+```
+
+In NameOfMsg.msg, add msg definition
+ex
+```
+int64 temperature
+bool are_motors_up
+string debug_message
+```
+
+In CMakeList.txt uncomment add_message_files
+ex:
+```
+add_message_files(
+  Files
+  NameOfMsg.msg
+)
+```
+
+Now build in catkin_ws
+`catkin_make`

@@ -53,16 +53,20 @@ rm -rf include/
 rm -rf src/
 ```
 ### Need to add package.xml
+
 `<build_depend>message_generation</build_depend>`
+
 `<exec_depend>message_runtime</exec_depend>`
 
 ### Need to add CMakeList.txt
 In find_package add
 `message_generation`
+
 Uncomment:
 generate_messages section
 
 In catkin_package,
+
 uncomment CATKIN_DPENDS roscpp rospy std_msgs
 and add message_runtime
 
@@ -94,3 +98,8 @@ add_message_files(
 
 Now build in catkin_ws
 `catkin_make`
+
+Check where msg at:
+```
+cd devel/include/name_of_msg
+```

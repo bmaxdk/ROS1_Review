@@ -44,11 +44,12 @@ target_link_libraries(nameofnode ${catkin_LIBRARIES})
 ```
 `catkin_make`
 
-## Handle Parameters
+# Handle Parameters
+## Create Custom MSG
 ```
 cd catkin_ws/src
-catkin_create_pkg name_of_msgs roscpp rospy std_msgs
-cd name_of_msgs
+catkin_create_pkg name_of_msgs_pkg roscpp rospy std_msgs
+cd name_of_msgs_pkg
 rm -rf include/
 rm -rf src/
 ```
@@ -72,7 +73,7 @@ and add message_runtime
 
 `CATKIN_DPENDS roscpp rospy std_msgs message_runtime`
 
-## create folder in /catkin_ws/src/name_of_msgs
+## create folder in /catkin_ws/src/name_of_msgs_pkg
 ```
 mkdir msg
 cd msg
@@ -101,7 +102,7 @@ Now build in catkin_ws
 
 Check where msg at:
 ```
-cd devel/include/name_of_msg
+cd devel/include/name_of_msg_pkg
 ```
 
 ## To use msg
@@ -109,10 +110,12 @@ Go to package and add Package.xml
 
 Add depend type
 ```
-<depend>name_of_msgs</depend>
+<depend>name_of_msgs_pkg</depend>
 ```
 
 In CMakeList.txt, add in `find_package`
 ```
-name_of_msgs
+name_of_msgs_pkg
 ```
+
+## Create Custom Srv

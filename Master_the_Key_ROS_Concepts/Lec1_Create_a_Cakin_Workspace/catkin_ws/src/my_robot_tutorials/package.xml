@@ -61,7 +61,8 @@
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>rospy_tutorials</exec_depend>
-
+  
+  <depend>my_robot_msgs</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

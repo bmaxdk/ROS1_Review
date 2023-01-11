@@ -103,3 +103,16 @@ Check where msg at:
 ```
 cd devel/include/name_of_msg
 ```
+
+## To use msg
+Go to package and add Package.xml
+
+Add depend type
+```
+<depend>name_of_msgs</depend>
+```
+
+In CMakeList.txt, add in `find_package`
+```
+name_of_msgs
+```

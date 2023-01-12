@@ -119,3 +119,20 @@ name_of_msgs_pkg
 ```
 
 ## Create Custom Srv
+Create in same name_of_msgs_pkg
+```
+mkdir srv
+cd srv
+touch name_of_srv.srv
+```
+
+In srv file you can add type you want to add. Ex:
+```
+float64 name_of_request
+---
+float64 name_of_response
+```
+
+Add CMakeList.txt. Uncomment `add_service_files` and add into name_of_service.srv
+
+Use `catkin_make`

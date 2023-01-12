@@ -136,3 +136,6 @@ float64 name_of_response
 Add CMakeList.txt. Uncomment `add_service_files` and add into Name_Of_Service.srv
 
 Use `catkin_make`
+
+### To check
+`devel/include/name_of_msg_pkg

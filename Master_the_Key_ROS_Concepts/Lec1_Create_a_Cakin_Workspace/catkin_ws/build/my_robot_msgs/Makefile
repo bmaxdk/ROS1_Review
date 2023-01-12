@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,17 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -318,21 +318,6 @@ my_robot_msgs_generate_messages_py/fast:
 .PHONY : my_robot_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_HardwareStatus.dir/rule:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_HardwareStatus.dir/rule
 .PHONY : my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_HardwareStatus.dir/rule
@@ -483,6 +468,36 @@ my_robot_msgs_gencpp/fast:
 .PHONY : my_robot_msgs_gencpp/fast
 
 # Convenience name for target.
+my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_robot_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/rule:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/rule
+.PHONY : my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/rule
+
+# Convenience name for target.
+_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea: my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/rule
+
+.PHONY : _my_robot_msgs_generate_messages_check_deps_ComputeDiskArea
+
+# fast build rule for target.
+_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea/fast:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/build.make my_robot_msgs/CMakeFiles/_my_robot_msgs_generate_messages_check_deps_ComputeDiskArea.dir/build
+.PHONY : _my_robot_msgs_generate_messages_check_deps_ComputeDiskArea/fast
+
+# Convenience name for target.
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_cpp.dir/rule:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_cpp.dir/rule
@@ -581,6 +596,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... my_robot_msgs_gennodejs"
@@ -592,7 +608,6 @@ help:
 	@echo "... my_robot_msgs_genlisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... my_robot_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _my_robot_msgs_generate_messages_check_deps_HardwareStatus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rebuild_cache"
@@ -604,6 +619,8 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... my_robot_msgs_gencpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... _my_robot_msgs_generate_messages_check_deps_ComputeDiskArea"
 	@echo "... my_robot_msgs_generate_messages_cpp"
 	@echo "... my_robot_msgs_generate_messages_eus"
 	@echo "... my_robot_msgs_generate_messages_lisp"
@@ -611,7 +628,6 @@ help:
 	@echo "... my_robot_msgs_genpy"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... test"
-	@echo "... edit_cache"
 .PHONY : help
 
 

@@ -1,0 +1,10 @@
+(cl:defpackage my_robot_msgs-srv
+  (:use )
+  (:export
+   "COMPUTEDISKAREA"
+   "<COMPUTEDISKAREA-REQUEST>"
+   "COMPUTEDISKAREA-REQUEST"
+   "<COMPUTEDISKAREA-RESPONSE>"
+   "COMPUTEDISKAREA-RESPONSE"
+  ))
+

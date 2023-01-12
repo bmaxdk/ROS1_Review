@@ -482,6 +482,9 @@ my_number_counter_SOURCE_DIR:STATIC=/home/eight/Downloads/Udemy/Master_the_Key_R
 //Value Computed by CMake
 my_robot_msgs_BINARY_DIR:STATIC=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_msgs
 
+//The directory containing a CMake configuration file for my_robot_msgs.
+my_robot_msgs_DIR:PATH=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/devel/share/my_robot_msgs/cmake
+
 //Value Computed by CMake
 my_robot_msgs_SOURCE_DIR:STATIC=/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/src/my_robot_msgs
 

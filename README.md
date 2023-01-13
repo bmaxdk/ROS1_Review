@@ -137,5 +137,4 @@ Add CMakeList.txt. Uncomment `add_service_files` and add into Name_Of_Service.sr
 
 Use `catkin_make`
 
-### To check
-`devel/include/name_of_msg_pkg
+### To check, go to inside of the directory `devel/include/name_of_msg_pkg`

@@ -138,3 +138,18 @@ Add CMakeList.txt. Uncomment `add_service_files` and add into Name_Of_Service.sr
 Use `catkin_make`
 
 ### To check, go to inside of the directory `devel/include/name_of_msg_pkg`
+
+To use the msg or srv package, add  ` <depend>msg_package_name</depend>` in your package.xml at the package where you want to use.
+
+Also, add 
+```
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  msg_package_name
+)
+
+```
+in your CMakeList.txt in the package where you want to use.
+

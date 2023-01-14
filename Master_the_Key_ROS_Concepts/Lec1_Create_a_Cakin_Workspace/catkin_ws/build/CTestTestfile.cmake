@@ -5,6 +5,8 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("battery_msgs")
+subdirs("battery_status")
 subdirs("my_robot_msgs")
 subdirs("my_number_counter")
 subdirs("my_robot_tutorials")

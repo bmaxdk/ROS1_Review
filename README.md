@@ -153,3 +153,36 @@ find_package(catkin REQUIRED COMPONENTS
 ```
 in your CMakeList.txt in the package where you want to use.
 
+## Handle Parameters
+```
+rosparam -h
+# to add parameter, you can follow this example
+rosparam set /name_of_parameter1 "name"
+rosparam set /name_of_parameter2 30
+rosparam set /name_of_parameter3 false
+```
+
+You can add parameters directly into the node
+
+### rosparam for Python
+For example in python check file number_publisher.py
+
+`publish_frequency = rospy.get_param("/number_publish_frequency")`
+*Make sure to set /number_publish_frequency to set first before run
+ex:
+ 
+`rosparam set /number_publish_frequency 3`
+
+Run the package and the node
+
+then add
+
+`rostopic echo /number`
+
+We can also set rosparam in the file
+```
+    # [rosparam] We can also set param here
+    rospy.set_param("/another_param", "Hello")
+```
+
+### Now rosparam with C++

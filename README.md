@@ -218,5 +218,15 @@ You will see in `rosparam list`.
 *For C++, always `catkin_make` after update code.
 
 
-## ROS Launch files
+## ROS Launch file
+Launch file allows to run several nodes and param in one time.
+First in your `catkin_ws/src`, create pkg.
 
+`catkin_create_pkg name_of_launch_file_bringup`
+
+Here you don't have to add any dependencies.
+
+Here inside the pkg, make launch directoy. 
+```
+
+```

@@ -215,4 +215,5 @@ nh.setParam("/just_another_param", "Bye");
 ```
 
 You will see in `rosparam list`.
+*For C++, always `catkin_make` after update code.
 

@@ -181,8 +181,20 @@ then add
 
 We can also set rosparam in the file
 ```
-    # [rosparam] We can also set param here
-    rospy.set_param("/another_param", "Hello")
+# [rosparam] We can also set param here
+rospy.set_param("/another_param", "Hello")
 ```
 
 ### Now rosparam with C++
+
+In `my_number_counter` pkg, add `number_publisher.cpp`.
+
+EX:
+```
+double publish_frequency;
+nh.getParam("/number_publish_frequency", publish_frequency);
+ros::Rate rate(publish_frequency);
+```
+Follow same step, `rosparam set /number_publish_frequency 3`.
+
+

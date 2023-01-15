@@ -197,4 +197,14 @@ ros::Rate rate(publish_frequency);
 ```
 Follow same step, `rosparam set /number_publish_frequency 3`.
 
+Also, you can add more. Ex,
+```
+//[rosparam]
+int number;
+nh.getParam("/number_to_publish", number);
+//update msg.data to
+msg.data=number;
+```
+`rosparam set /number_to_publish 4`
+
 

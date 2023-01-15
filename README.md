@@ -207,4 +207,12 @@ msg.data=number;
 ```
 `rosparam set /number_to_publish 4`
 
+You can also `setParam` to skip typing rosparam set.
+Ex, inside the same folder add
+```
+nh.setParam("/just_another_param", "Bye");
+
+```
+
+You will see in `rosparam list`.
 

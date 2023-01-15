@@ -227,6 +227,19 @@ First in your `catkin_ws/src`, create pkg.
 Here you don't have to add any dependencies.
 
 Here inside the pkg, make launch directoy. 
+
+ex.
 ```
+catkin_create_pkg my_robot_bringup
+cd my_robot_bringup
+mkdir launch
+cd launch
+touch number_app.launch
+```
+
+Inside the launch file, the way to write launch file is basically xml.
+
+```
+
 
 ```

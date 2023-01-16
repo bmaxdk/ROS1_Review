@@ -273,7 +273,10 @@ Now, let's add Node inside of the launch file.
         <node name="number_counter" pkg="my_number_counter" type="number_counter.py" />
 
 </launch>
-~                   
+               
 ```
+Try `roslaunch my_robot_bringup number_app.launch` without roscore. It will still works.
+
+`roslaunch` first check wheter `roscore` if not there, it will auto-starting newmaster which helps alot.
 
 

@@ -239,7 +239,41 @@ touch number_app.launch
 
 Inside the launch file, the way to write launch file is basically xml.
 
+Try this first to see launch file indicates parameter once it launched. 
+Ex.
+```
+<launch>
+
+        <param name="/number_publish_frequency" type="double" value="3.0" />
+        <param name="/number_to_publish" type="int" value="2" /> 
+
+</launch>
+
+```
+Do `catkin_make` and `roscore` and source it.
+
+You will want to lauch file following this method.
+
+`roslaunch name_of_launch_pkg nameoflaunchfile.launch`
+
+EX.
+
+`roslaunch my_robot_bringup number_app.launch`
+
+Once you see `rosparam list`, you will see parameters that you added in launch file.
+
+Now, let's add Node inside of the launch file.
+```
+<launch>
+
+        <param name="/number_publish_frequency" type="double" value="3.0" />
+        <param name="/number_to_publish" type="int" value="2" /> 
+
+        <node name="number_publisher" pkg="my_number_counter" type="number_publisher" />
+        <node name="number_counter" pkg="my_number_counter" type="number_counter.py" />
+
+</launch>
+~                   
 ```
 
 
-```

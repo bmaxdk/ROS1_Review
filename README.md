@@ -323,3 +323,4 @@ cat ~/.bashrc
 cat ~/.zshrc
 use vim
 
+Congraturation! Hope you enjoyed this!

@@ -44,6 +44,9 @@ target_link_libraries(nameofnode ${catkin_LIBRARIES})
 ```
 `catkin_make`
 
+To run node to node, use `rosrun name_of_pkg node`.
+
+
 # Handle Parameters
 ## Create Custom MSG
 ```

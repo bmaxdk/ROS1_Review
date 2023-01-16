@@ -279,4 +279,34 @@ Try `roslaunch my_robot_bringup number_app.launch` without roscore. It will stil
 
 `roslaunch` first check wheter `roscore` if not there, it will auto-starting newmaster which helps alot.
 
+## `rosbag`
+`rosbag` enable to recall and store some message and replay them later. Allow to replay certain situation.
+
+For example,
+
+```
+roscore
+
+rosrun my_robot_tutorials hw_status_publisher.py
+
+rostopic echo /my_robot/hardware_status
+```
+
+Here, you want to save/record those topic for later
+
+First run the `rosrun my_robot_tutorials hw_status_publisher.py` node. While running,
+```
+rosbag record /my_robot/hardware_status
+
+```
+
+Once you kill the node, in the folder you will see file.bag. 
+```
+rosbag info file.bag
+```
+Now you want to play this message. First you want to check rostopic list which will only run roscore only here. However, once you type
+```
+rosbag play file.bag
+```
+You will see in topic list that saved topic appears.
 

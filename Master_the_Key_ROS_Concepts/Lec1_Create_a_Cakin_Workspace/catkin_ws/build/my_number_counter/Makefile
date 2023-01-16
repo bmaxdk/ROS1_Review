@@ -347,33 +347,6 @@ number_counter/fast:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/build
 .PHONY : number_counter/fast
 
-src/number_counter.o: src/number_counter.cpp.o
-
-.PHONY : src/number_counter.o
-
-# target to build an object file
-src/number_counter.cpp.o:
-	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.o
-.PHONY : src/number_counter.cpp.o
-
-src/number_counter.i: src/number_counter.cpp.i
-
-.PHONY : src/number_counter.i
-
-# target to preprocess a source file
-src/number_counter.cpp.i:
-	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.i
-.PHONY : src/number_counter.cpp.i
-
-src/number_counter.s: src/number_counter.cpp.s
-
-.PHONY : src/number_counter.s
-
-# target to generate assembly for a file
-src/number_counter.cpp.s:
-	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/number_counter.cpp.s
-.PHONY : src/number_counter.cpp.s
-
 src/number_publisher.o: src/number_publisher.cpp.o
 
 .PHONY : src/number_publisher.o
@@ -401,6 +374,33 @@ src/number_publisher.cpp.s:
 	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_publisher.dir/build.make my_number_counter/CMakeFiles/number_publisher.dir/src/number_publisher.cpp.s
 .PHONY : src/number_publisher.cpp.s
 
+src/oop_number_counter.o: src/oop_number_counter.cpp.o
+
+.PHONY : src/oop_number_counter.o
+
+# target to build an object file
+src/oop_number_counter.cpp.o:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/oop_number_counter.cpp.o
+.PHONY : src/oop_number_counter.cpp.o
+
+src/oop_number_counter.i: src/oop_number_counter.cpp.i
+
+.PHONY : src/oop_number_counter.i
+
+# target to preprocess a source file
+src/oop_number_counter.cpp.i:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/oop_number_counter.cpp.i
+.PHONY : src/oop_number_counter.cpp.i
+
+src/oop_number_counter.s: src/oop_number_counter.cpp.s
+
+.PHONY : src/oop_number_counter.s
+
+# target to generate assembly for a file
+src/oop_number_counter.cpp.s:
+	cd /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build && $(MAKE) -f my_number_counter/CMakeFiles/number_counter.dir/build.make my_number_counter/CMakeFiles/number_counter.dir/src/oop_number_counter.cpp.s
+.PHONY : src/oop_number_counter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -426,12 +426,12 @@ help:
 	@echo "... number_publisher"
 	@echo "... list_install_components"
 	@echo "... number_counter"
-	@echo "... src/number_counter.o"
-	@echo "... src/number_counter.i"
-	@echo "... src/number_counter.s"
 	@echo "... src/number_publisher.o"
 	@echo "... src/number_publisher.i"
 	@echo "... src/number_publisher.s"
+	@echo "... src/oop_number_counter.o"
+	@echo "... src/oop_number_counter.i"
+	@echo "... src/oop_number_counter.s"
 .PHONY : help
 
 

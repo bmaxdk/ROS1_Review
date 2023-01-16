@@ -318,3 +318,8 @@ Check node file `oop_number_counter.py`
 ## OOP with ROS C++
 Check node file `oop_number_counter.cpp`
 
+## Setup source
+cat ~/.bashrc
+cat ~/.zshrc
+use vim
+

@@ -326,6 +326,11 @@ cat ~/.bashrc
 cat ~/.zshrc
 use vim
 
+## Extra
+### Publish a message on a topic in cmd line
+`rostopic pub -r 10 /topic_name message_type ""` : publish repeat 10 times
+
+
 ## Useful resource
 - ROS Wiki
 - ROS Answers

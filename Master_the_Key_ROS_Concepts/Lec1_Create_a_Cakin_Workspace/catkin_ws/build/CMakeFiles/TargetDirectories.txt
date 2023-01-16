@@ -35,6 +35,14 @@
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/gtest/googletest/CMakeFiles/test.dir
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/gtest/googletest/CMakeFiles/gtest.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/install/strip.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/install/local.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/install.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/list_install_components.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/rebuild_cache.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/edit_cache.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/test.dir
+/home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/my_robot_bringup/CMakeFiles/_catkin_empty_exported_target.dir
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/battery_msgs/CMakeFiles/install/strip.dir
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/battery_msgs/CMakeFiles/install.dir
 /home/eight/Downloads/Udemy/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/build/battery_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir

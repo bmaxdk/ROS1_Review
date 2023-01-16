@@ -312,9 +312,9 @@ You will see in topic list that saved topic appears.
 This is useful to test your robot with saved one.
 
 ## OOP with ROS Python
-Check node file `oop_number_counter.py
+Check node file `oop_number_counter.py`
 
 
 ## OOP with ROS C++
-
+Check node file `oop_number_counter.cpp`
 

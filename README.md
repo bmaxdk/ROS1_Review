@@ -331,9 +331,10 @@ use vim
 `rostopic pub -r 10 /topic_name message_type ""` : publish repeat 10 times. if you want to run just one time change `-r 10` to `-1`.
 
 ### rqt_graph
-rosrun rqt_graph rqt_graph
+`rosrun rqt_graph rqt_graph`
 
-
+### Showing the contents of ROS msgs published
+`rostopic echo /name_of_topic`
 
 ## Useful resource
 - ROS Wiki

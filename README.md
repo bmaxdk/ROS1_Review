@@ -323,4 +323,8 @@ cat ~/.bashrc
 cat ~/.zshrc
 use vim
 
+## Useful resource
+- ROS Wiki
+- ROS Answers
+- ROS Discourse
 Congraturation! Hope you enjoyed this!

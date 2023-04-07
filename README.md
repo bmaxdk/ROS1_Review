@@ -50,12 +50,12 @@ To run node to node, use `rosrun name_of_pkg node`.
 
 # Handle Parameters
 ## Create Custom MSG
-```
-cd catkin_ws/src
-catkin_create_pkg name_of_msgs_pkg roscpp rospy std_msgs
-cd name_of_msgs_pkg
-rm -rf include/
-rm -rf src/
+```bash
+$ cd catkin_ws/src
+$ catkin_create_pkg name_of_msgs_pkg roscpp rospy std_msgs
+$ cd name_of_msgs_pkg
+$ rm -rf include/
+$ rm -rf src/
 ```
 ### Need to add package.xml
 

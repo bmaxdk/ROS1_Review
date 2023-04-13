@@ -39,7 +39,7 @@ this helps to make execute table.
 ### Key point for C++
 create cppfile in src in pcakage
 Inside CMakeLists.txt:
-```
+```xml
 add_executable(nameofnode src/nameofcppfile.cpp)
 target_link_libraries(nameofnode ${catkin_LIBRARIES})
 ```
@@ -78,10 +78,10 @@ and add message_runtime
 `CATKIN_DPENDS roscpp rospy std_msgs message_runtime`
 
 ## create folder in /catkin_ws/src/name_of_msgs_pkg
-```
-mkdir msg
-cd msg
-touch NameOfMsg.msg
+```bash
+$ mkdir msg
+$ cd msg
+$ touch NameOfMsg.msg
 ```
 
 In NameOfMsg.msg, add msg definition

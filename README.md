@@ -86,7 +86,7 @@ $ touch NameOfMsg.msg
 
 In NameOfMsg.msg, add msg definition
 ex
-```
+```msg
 int64 temperature
 bool are_motors_up
 string debug_message
@@ -94,7 +94,7 @@ string debug_message
 
 In CMakeList.txt uncomment add_message_files
 ex:
-```
+```txt
 add_message_files(
   Files
   NameOfMsg.msg

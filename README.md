@@ -340,9 +340,9 @@ use vim
 ### Showing the contents of ROS msgs published
 `rostopic echo /name_of_topic`
 To show msg type
-```
-rostopic info /name_of_topic
-rosmsg show /name_of_msg_type
+```bash
+$ rostopic info /name_of_topic
+$ rosmsg show /name_of_msg_type
 ```
 
 ## Useful resource

@@ -23,7 +23,7 @@ To add it directly without to open a text editior, simply type
 `echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
 
 ## Create a ROS Package
-```baash
+```bash
 $ cd catkin_ws/src
 $ catkin_create_pkg name_of_package roscpp rospy std_msgs
 ```
@@ -105,20 +105,20 @@ Now build in catkin_ws
 `catkin_make`
 
 Check where msg at:
-```
-cd devel/include/name_of_msg_pkg
+```bash
+$ cd devel/include/name_of_msg_pkg
 ```
 
 ## To use msg
 Go to package and add Package.xml
 
 Add depend type
-```
+```xml
 <depend>name_of_msgs_pkg</depend>
 ```
 
 In CMakeList.txt, add in `find_package`
-```
+```txt
 name_of_msgs_pkg
 ```
 
@@ -184,7 +184,7 @@ then add
 `rostopic echo /number`
 
 We can also set rosparam in the file
-```
+```xml
 # [rosparam] We can also set param here
 rospy.set_param("/another_param", "Hello")
 ```
@@ -194,7 +194,7 @@ rospy.set_param("/another_param", "Hello")
 In `my_number_counter` pkg, add `number_publisher.cpp`.
 
 EX:
-```
+```cpp
 double publish_frequency;
 nh.getParam("/number_publish_frequency", publish_frequency);
 ros::Rate rate(publish_frequency);
@@ -202,7 +202,7 @@ ros::Rate rate(publish_frequency);
 Follow same step, `rosparam set /number_publish_frequency 3`.
 
 Also, you can add more. Ex,
-```
+```cpp
 //[rosparam]
 int number;
 nh.getParam("/number_to_publish", number);
@@ -213,7 +213,7 @@ msg.data=number;
 
 You can also `setParam` to skip typing rosparam set.
 Ex, inside the same folder add
-```
+```cpp
 nh.setParam("/just_another_param", "Bye");
 
 ```
@@ -233,19 +233,19 @@ Here you don't have to add any dependencies.
 Here inside the pkg, make launch directoy. 
 
 ex.
-```
-catkin_create_pkg my_robot_bringup
-cd my_robot_bringup
-mkdir launch
-cd launch
-touch number_app.launch
+```bash
+$ catkin_create_pkg my_robot_bringup
+$ cd my_robot_bringup
+$ mkdir launch
+$ cd launch
+$ touch number_app.launch
 ```
 
 Inside the launch file, the way to write launch file is basically xml.
 
 Try this first to see launch file indicates parameter once it launched. 
 Ex.
-```
+```cmake
 <launch>
 
         <param name="/number_publish_frequency" type="double" value="3.0" />

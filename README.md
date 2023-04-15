@@ -158,12 +158,12 @@ find_package(catkin REQUIRED COMPONENTS
 in your CMakeList.txt in the package where you want to use.
 
 ## Handle Parameters
-```txt
-rosparam -h
+```bash
+$ rosparam -h
 # to add parameter, you can follow this example
-rosparam set /name_of_parameter1 "name"
-rosparam set /name_of_parameter2 30
-rosparam set /name_of_parameter3 false
+$ rosparam set /name_of_parameter1 "name"
+$ rosparam set /name_of_parameter2 30
+$ rosparam set /name_of_parameter3 false
 ```
 
 You can add parameters directly into the node
@@ -267,7 +267,7 @@ EX.
 Once you see `rosparam list`, you will see parameters that you added in launch file.
 
 Now, let's add Node inside of the launch file.
-```
+```cmake
 <launch>
 
         <param name="/number_publish_frequency" type="double" value="3.0" />
@@ -288,29 +288,29 @@ Try `roslaunch my_robot_bringup number_app.launch` without roscore. It will stil
 
 For example,
 
-```
-roscore
+```bash
+$ roscore
 
-rosrun my_robot_tutorials hw_status_publisher.py
+$ rosrun my_robot_tutorials hw_status_publisher.py
 
-rostopic echo /my_robot/hardware_status
+$ rostopic echo /my_robot/hardware_status
 ```
 
 Here, you want to save/record those topic for later
 
 First run the `rosrun my_robot_tutorials hw_status_publisher.py` node. While running,
-```
-rosbag record /my_robot/hardware_status
+```bash
+$ rosbag record /my_robot/hardware_status
 
 ```
 
 Once you kill the node, in the folder you will see file.bag. 
-```
-rosbag info file.bag
+```bash
+$ rosbag info file.bag
 ```
 Now you want to play this message. First you want to check rostopic list which will only run roscore only here. However, once you type
-```
-rosbag play file.bag
+```bash
+$ rosbag play file.bag
 ```
 You will see in topic list that saved topic appears.
 This is useful to test your robot with saved one.
@@ -323,8 +323,11 @@ Check node file `oop_number_counter.py`
 Check node file `oop_number_counter.cpp`
 
 ## Setup source
-cat ~/.bashrc
-cat ~/.zshrc
+```bash
+$ cat ~/.bashrc
+#or
+$ cat ~/.zshrc
+```
 use vim
 
 ## Extra

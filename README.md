@@ -124,14 +124,14 @@ name_of_msgs_pkg
 
 ## Create Custom Srv
 Create in same name_of_msgs_pkg
-```
-mkdir srv
-cd srv
-touch Name_Of_Srv.srv
+```bash
+$ mkdir srv
+$ cd srv
+$ touch Name_Of_Srv.srv
 ```
 
 In srv file you can add type you want to add. Ex:
-```
+```srv
 float64 name_of_request
 ---
 float64 name_of_response
@@ -146,7 +146,7 @@ Use `catkin_make`
 To use the msg or srv package, add  ` <depend>msg_package_name</depend>` in your package.xml at the package where you want to use.
 
 Also, add 
-```
+```cmake
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
@@ -158,7 +158,7 @@ find_package(catkin REQUIRED COMPONENTS
 in your CMakeList.txt in the package where you want to use.
 
 ## Handle Parameters
-```
+```txt
 rosparam -h
 # to add parameter, you can follow this example
 rosparam set /name_of_parameter1 "name"

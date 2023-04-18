@@ -258,12 +258,15 @@ Do `catkin_make` and `roscore` and source it.
 
 You will want to lauch file following this method.
 
-`roslaunch name_of_launch_pkg nameoflaunchfile.launch`
+```bash
+$ roslaunch name_of_launch_pkg nameoflaunchfile.launch
+```
 
 EX.
 
-`roslaunch my_robot_bringup number_app.launch`
-
+```bash
+$ roslaunch my_robot_bringup number_app.launch
+```
 Once you see `rosparam list`, you will see parameters that you added in launch file.
 
 Now, let's add Node inside of the launch file.

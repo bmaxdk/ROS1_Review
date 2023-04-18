@@ -335,13 +335,18 @@ use vim
 
 ## Extra
 ### Publish a message on a topic in cmd line
-`rostopic pub -r 10 /topic_name message_type ""` : publish repeat 10 times. if you want to run just one time change `-r 10` to `-1`.
-
+```bash
+$ rostopic pub -r 10 /topic_name message_type "" #  publish repeat 10 times. if you want to run just one time change :"-r 10" to "-1".
+```
 ### rqt_graph
-`rosrun rqt_graph rqt_graph`
+```bash
+$ rosrun rqt_graph rqt_graph
+```
 
 ### Showing the contents of ROS msgs published
-`rostopic echo /name_of_topic`
+```bash
+$ rostopic echo /name_of_topic
+```
 To show msg type
 ```bash
 $ rostopic info /name_of_topic

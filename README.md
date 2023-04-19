@@ -32,7 +32,9 @@ $ catkin_create_pkg name_of_package roscpp rospy std_msgs
 
 ### Key point for Python
 create script in the package to add
-`chmod +x name_of_python_node.cpp `
+```bash
+$ chmod +x name_of_python_node.py 
+```
 this helps to make execute table.
 `#!/usr/bin/env python3`
 
@@ -43,9 +45,14 @@ Inside CMakeLists.txt:
 add_executable(nameofnode src/nameofcppfile.cpp)
 target_link_libraries(nameofnode ${catkin_LIBRARIES})
 ```
-`catkin_make`
+```bash
+$ catkin_make
+```
 
-To run node to node, use `rosrun name_of_pkg node`.
+To run node to node, use 
+```bash
+$ rosrun name_of_pkg node
+```
 
 
 # Handle Parameters
@@ -59,21 +66,22 @@ $ rm -rf src/
 ```
 ### Need to add package.xml
 
-`<build_depend>message_generation</build_depend>`
-
-`<exec_depend>message_runtime</exec_depend>`
+```xml
+<build_depend>message_generation</build_depend>
+<exec_depend>message_runtime</exec_depend>
+```
 
 ### Need to add CMakeList.txt
 In find_package add
-`message_generation`
+`message_generation` in the file.
 
 Uncomment:
 generate_messages section
 
 In catkin_package,
 
-uncomment CATKIN_DPENDS roscpp rospy std_msgs
-and add message_runtime
+uncomment `CATKIN_DPENDS roscpp rospy std_msgs`
+and add `message_runtime`.
 
 `CATKIN_DPENDS roscpp rospy std_msgs message_runtime`
 
@@ -102,7 +110,9 @@ add_message_files(
 ```
 
 Now build in catkin_ws
-`catkin_make`
+```bash
+catkin_make
+```
 
 Check where msg at:
 ```bash

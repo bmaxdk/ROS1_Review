@@ -219,16 +219,20 @@ nh.getParam("/number_to_publish", number);
 //update msg.data to
 msg.data=number;
 ```
-`rosparam set /number_to_publish 4`
+```bash
+$ rosparam set /number_to_publish 4
+```
 
 You can also `setParam` to skip typing rosparam set.
 Ex, inside the same folder add
 ```cpp
 nh.setParam("/just_another_param", "Bye");
-
 ```
 
-You will see in `rosparam list`.
+You will see in 
+```bash
+$ rosparam list
+```
 *For C++, always `catkin_make` after update code.
 
 
@@ -264,7 +268,13 @@ Ex.
 </launch>
 
 ```
-Do `catkin_make` and `roscore` and source it.
+Do 
+```bash
+$ catkin_make
+$ roscore
+
+``` 
+and source it.
 
 You will want to lauch file following this method.
 
@@ -364,7 +374,7 @@ $ rosmsg show /name_of_msg_type
 ```
 
 ## Useful resource
-- ROS Wiki
-- ROS Answers
-- ROS Discourse
+- [ROS Wiki](http://wiki.ros.org/Documentation)
+- [ROS Answers](https://answers.ros.org/questions/)
+- [ROS Discourse](https://discourse.ros.org/)
 Congraturation! Hope you enjoyed this!

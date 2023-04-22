@@ -202,7 +202,7 @@ $ rostopic echo /number
 ```
 
 We can also set rosparam in the file
-```xml
+```python
 # [rosparam] We can also set param here
 rospy.set_param("/another_param", "Hello")
 ```

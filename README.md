@@ -20,7 +20,9 @@ $ source ~/catkin_ws/devel/setup.bash
 
 To add it directly without to open a text editior, simply type 
 
-`echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
+```bash
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+```
 
 ## Create a ROS Package
 ```bash

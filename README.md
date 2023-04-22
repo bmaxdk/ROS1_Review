@@ -343,7 +343,7 @@ Check node file `oop_number_counter.py`
 
 
 ## OOP with ROS C++
-Check node file `oop_number_counter.cpp`
+Check node file [oop_number_counter.cpp](https://github.com/bmaxdk/ROS1_Review/blob/main/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/src/my_number_counter/src/oop_number_counter.cpp)
 
 ## Setup source
 ```bash

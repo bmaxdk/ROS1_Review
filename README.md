@@ -113,7 +113,7 @@ add_message_files(
 
 Now build in catkin_ws
 ```bash
-catkin_make
+$ catkin_make
 ```
 
 Check where msg at:
@@ -183,17 +183,23 @@ You can add parameters directly into the node
 ### rosparam for Python
 For example in python check file number_publisher.py
 
-`publish_frequency = rospy.get_param("/number_publish_frequency")`
+```python
+publish_frequency = rospy.get_param("/number_publish_frequency")
+```
 *Make sure to set /number_publish_frequency to set first before run
 ex:
  
-`rosparam set /number_publish_frequency 3`
+```bash
+$ rosparam set /number_publish_frequency 3
+```
 
 Run the package and the node
 
 then add
 
-`rostopic echo /number`
+```bash
+$ rostopic echo /number
+```
 
 We can also set rosparam in the file
 ```xml

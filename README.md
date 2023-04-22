@@ -27,7 +27,7 @@ To add it directly without to open a text editior, simply type
 $ cd catkin_ws/src
 $ catkin_create_pkg name_of_package roscpp rospy std_msgs
 ```
-* dependencies : roscpp, rospy std_msgs
+* dependencies : ***roscpp, rospy std_msgs***
 
 
 ### Key point for Python
@@ -92,8 +92,8 @@ $ cd msg
 $ touch NameOfMsg.msg
 ```
 
-In NameOfMsg.msg, add msg definition
-ex
+In ***NameOfMsg.msg***, add msg definition
+ex:
 ```msg
 int64 temperature
 bool are_motors_up

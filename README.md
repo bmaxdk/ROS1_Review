@@ -14,7 +14,7 @@ $ catkin_make
 To do that, add this line
 ```bash
 $ source devel/setup.bash
-or
+# or
 $ source ~/catkin_ws/devel/setup.bash
 ```
 
@@ -38,7 +38,9 @@ create script in the package to add
 $ chmod +x name_of_python_node.py 
 ```
 this helps to make execute table.
-`#!/usr/bin/env python3`
+```python
+#!/usr/bin/env python3
+```
 
 ### Key point for C++
 create cppfile in src in pcakage

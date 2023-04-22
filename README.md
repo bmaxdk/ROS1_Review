@@ -80,7 +80,7 @@ In find_package add
 Uncomment:
 generate_messages section
 
-In catkin_package,
+In **catkin_package**,
 
 uncomment `CATKIN_DPENDS roscpp rospy std_msgs`
 and add `message_runtime`.
@@ -181,7 +181,7 @@ $ rosparam set /name_of_parameter3 false
 You can add parameters directly into the node
 
 ### rosparam for Python
-For example in python check file number_publisher.py
+For example in python check file [number_publisher.py](https://github.com/bmaxdk/ROS1_Review/blob/main/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/src/my_number_counter/scripts/number_publisher.py)
 
 ```python
 publish_frequency = rospy.get_param("/number_publish_frequency")
@@ -209,7 +209,7 @@ rospy.set_param("/another_param", "Hello")
 
 ### Now rosparam with C++
 
-In `my_number_counter` pkg, add `number_publisher.cpp`.
+In [my_number_counter](https://github.com/bmaxdk/ROS1_Review/tree/main/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/src/my_number_counter/src) pkg, add [number_publisher.cpp](https://github.com/bmaxdk/ROS1_Review/blob/main/Master_the_Key_ROS_Concepts/Lec1_Create_a_Cakin_Workspace/catkin_ws/src/my_number_counter/src/number_publisher.cpp).
 
 EX:
 ```cpp
@@ -297,7 +297,11 @@ EX.
 ```bash
 $ roslaunch my_robot_bringup number_app.launch
 ```
-Once you see `rosparam list`, you will see parameters that you added in launch file.
+Once you see 
+```bash 
+$ rosparam list
+```
+you will see parameters that you added in launch file.
 
 Now, let's add Node inside of the launch file.
 ```cmake

@@ -240,7 +240,9 @@ $ rosparam list
 Launch file allows to run several nodes and param in one time.
 First in your `catkin_ws/src`, create pkg.
 
-`catkin_create_pkg name_of_launch_file_bringup`
+```bash
+$ catkin_create_pkg name_of_launch_file_bringup
+```
 
 Here you don't have to add any dependencies.
 
@@ -302,7 +304,11 @@ Now, let's add Node inside of the launch file.
 </launch>
                
 ```
-Try `roslaunch my_robot_bringup number_app.launch` without roscore. It will still works.
+Try 
+```bash
+$ roslaunch my_robot_bringup number_app.launch
+``` 
+without roscore. It will still works.
 
 `roslaunch` first check wheter `roscore` if not there, it will auto-starting newmaster which helps alot.
 

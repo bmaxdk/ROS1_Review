@@ -397,4 +397,4 @@ $ rosmsg show /name_of_msg_type
 - [ROS Wiki](http://wiki.ros.org/Documentation)
 - [ROS Answers](https://answers.ros.org/questions/)
 - [ROS Discourse](https://discourse.ros.org/)
-Congraturation! Hope you enjoyed this!
+Congraturation! Hope you enjoyed this! Happy coding.

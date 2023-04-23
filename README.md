@@ -219,7 +219,10 @@ double publish_frequency;
 nh.getParam("/number_publish_frequency", publish_frequency);
 ros::Rate rate(publish_frequency);
 ```
-Follow same step, `rosparam set /number_publish_frequency 3`.
+Follow same step, 
+```bash 
+$ rosparam set /number_publish_frequency 3
+```
 
 Also, you can add more. Ex,
 ```cpp
